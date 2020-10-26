@@ -63,6 +63,11 @@ namespace Рулетка
             res:
             {
                 string amount = Console.ReadLine();
+                
+                if (Convert.ToInt32(amount) < 0)
+                    goto loop;
+                if (Convert.ToInt32(amount) > balance)
+                    goto loop;
 
                 try
                 {
