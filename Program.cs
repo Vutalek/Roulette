@@ -101,7 +101,7 @@ namespace Рулетка
                 if(v == 0)
                 {
                     Console.WriteLine("");
-                    Console.WriteLine(0);
+                    Console.WriteLine(v);
                     Console.WriteLine("");
                 }
                 for (int i = 0; i < reds.Length; i++)
