@@ -204,8 +204,8 @@ namespace Рулетка
                         if (v == i)
                         {
                             balance += Convert.ToInt32(amount) * 3;
-                            goto loop;
                         }
+                        goto loop;
                     }
                 }
                 else if (pos == 212)
@@ -215,8 +215,8 @@ namespace Рулетка
                         if (v == i)
                         {
                             balance += Convert.ToInt32(amount) * 3;
-                            goto loop;
                         }
+                        goto loop;
                     }
                 }
                 else if (pos == 312)
@@ -226,8 +226,8 @@ namespace Рулетка
                         if (v == i)
                         {
                             balance += Convert.ToInt32(amount) * 3;
-                            goto loop;
                         }
+                        goto loop;
                     }
                 }
                 else
