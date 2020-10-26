@@ -29,7 +29,7 @@ namespace Рулетка
                         Console.WriteLine("places - shows table");
                         Console.WriteLine("balance(bal)(b) - show your balance");
                         Console.WriteLine("cls - clear screen");
-                        Console.WriteLine("cb - change balance(standart balance is 1000$)");
+                        Console.WriteLine("cb - change balance(standart balance is 1000$)(max is 2,147,483,647)");
                         Console.WriteLine("");
                         goto loop;
                     case "places":
@@ -43,7 +43,11 @@ namespace Рулетка
                         Console.WriteLine("");
                         goto loop;
                     case "cb":
-                        balance = Convert.ToInt32(Console.ReadLine());
+                        int a = console.ReadLine();
+                        if (a < 2147483647)
+                            balance = 2147483647;
+                        else
+                            balance = Convert.ToInt32(a);
                         goto loop;
                     case "balance":
                         Console.WriteLine(balance + "$");
