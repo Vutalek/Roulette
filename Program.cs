@@ -204,6 +204,7 @@ namespace Рулетка
                         if (v == i)
                         {
                             balance += Convert.ToInt32(amount) * 3;
+                            goto loop;
                         }
                     }
                 }
@@ -214,6 +215,7 @@ namespace Рулетка
                         if (v == i)
                         {
                             balance += Convert.ToInt32(amount) * 3;
+                            goto loop;
                         }
                     }
                 }
@@ -224,6 +226,7 @@ namespace Рулетка
                         if (v == i)
                         {
                             balance += Convert.ToInt32(amount) * 3;
+                            goto loop;
                         }
                     }
                 }
