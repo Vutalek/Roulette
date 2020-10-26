@@ -25,9 +25,10 @@ namespace Рулетка
                 switch (choice)
                 {
                     case "help":
-                        Console.WriteLine("\nbet \n<amount> \n<poition> \nif poition is u, then bet will be cancelled\n");
+                        Console.WriteLine("\nbet \n<amount> \n<poition> \nif position is u, then bet will be cancelled\n");
                         Console.WriteLine("places - shows table");
                         Console.WriteLine("balance(bal)(b) - show your balance");
+                        Console.WriteLine("cls - clear screen");
                         Console.WriteLine("");
                         goto loop;
                     case "places":
@@ -51,6 +52,9 @@ namespace Рулетка
                     case "b":
                         Console.WriteLine(balance);
                         Console.WriteLine("");
+                        goto loop;
+                    case "cls":
+                        Console.Clear();
                         goto loop;
                     case "bet":
                         goto res;
