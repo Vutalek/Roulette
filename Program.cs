@@ -29,6 +29,7 @@ namespace Рулетка
                         Console.WriteLine("places - shows table");
                         Console.WriteLine("balance(bal)(b) - show your balance");
                         Console.WriteLine("cls - clear screen");
+                        Console.WriteLine("cb - change balance(standart balance is 1000$)");
                         Console.WriteLine("");
                         goto loop;
                     case "places":
@@ -41,16 +42,19 @@ namespace Рулетка
                         Console.WriteLine("bet: 4 \n1c \n312 \neven \nred \n19to36");
                         Console.WriteLine("");
                         goto loop;
+                    case "cb":
+                        balance = Convert.ToInt32(Console.ReadLine());
+                        goto loop;
                     case "balance":
-                        Console.WriteLine(balance);
+                        Console.WriteLine(balance + "$");
                         Console.WriteLine("");
                         goto loop;
                     case "bal":
-                        Console.WriteLine(balance);
+                        Console.WriteLine(balance + "$");
                         Console.WriteLine("");
                         goto loop;
                     case "b":
-                        Console.WriteLine(balance);
+                        Console.WriteLine(balance + "$");
                         Console.WriteLine("");
                         goto loop;
                     case "cls":
