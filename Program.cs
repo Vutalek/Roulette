@@ -86,6 +86,12 @@ namespace Рулетка
                 if (position == "u")
                     goto loop;
 
+                if(v == 0)
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine(0);
+                    Console.WriteLine("");
+                }
                 for (int i = 0; i < reds.Length; i++)
                 {
                     if (v == reds[i])
