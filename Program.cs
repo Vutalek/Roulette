@@ -44,7 +44,7 @@ namespace Рулетка
                         goto loop;
                     case "cb":
                         int a = Convert.ToInt32(Console.ReadLine());
-                        if (a < 2147483647)
+                        if (a > 2147483647)
                             balance = 2147483647;
                         else
                             balance = Convert.ToInt32(a);
